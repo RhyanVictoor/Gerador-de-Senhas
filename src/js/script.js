@@ -1,9 +1,9 @@
 function getChartTypes() {
-    const uppercase = document.querySelector("#include-uppercase").checked;
-    const lowercase = document.querySelector("#include-lowercase").checked;
-    const number = document.querySelector("#include-number").checked;
+    const uppercase = document.querySelector("#include_uppercase").checked;
+    const lowercase = document.querySelector("#include_lowercase").checked;
+    const number = document.querySelector("#include_number").checked;
     const specialCharacter = document.querySelector(
-        "#include-special-caracter"
+        "#include_special_character"
     ).checked;
 
     const charTypes = [];
@@ -11,12 +11,15 @@ function getChartTypes() {
     if (uppercase) {
         charTypes.push("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
     }
+
     if (lowercase) {
         charTypes.push("abcdefghijklmnopqrstuvwxyz");
     }
+
     if (number) {
         charTypes.push("0123456789");
     }
+
     if (specialCharacter) {
         charTypes.push("!@#$%^&*()_-+={}[]|\\/?><:;\"'.,~`");
     }
